@@ -192,8 +192,33 @@ h4{
     padding: 30px;
 }
 /****** Footer ******/
+.footer{
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 35px;
 
 
+}
+.footer section{
+    margin: unset;
+}
+.footer-content{
+    padding: 20px;
+    padding-bottom: unset;
+}
+.footer-title h4{
+    margin-block-end: unset;
+}
+ul{
+   
+    padding-left: unset;
+    margin-top: unset;
+}
+li{
+    padding-top: 15px;
+    list-style-type: none;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
