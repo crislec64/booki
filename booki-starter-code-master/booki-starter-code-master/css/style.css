@@ -12,7 +12,7 @@
     --white: white;
     --blueLight: #DEEBFF;
     --borderColor: #D9D9D9;
-    --filtersLiI:#0165fc;
+    --filtersLiI: #0165fc;
     --filtersLiinfo: #0065fc;
 }
 
@@ -34,7 +34,7 @@ body {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.375em;
 }
 
 .card {
@@ -44,12 +44,11 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
-    object-fit: cover;
-}
-
 .card-title {
-    font-size: 16px;
+    font-size: 1em;
+}
+.card-subtitle{
+    font-size: 0.875em;
 }
 
 .euro {
@@ -63,44 +62,54 @@ body {
 section {
     margin-top: 30px;
 }
+
+img {
+    object-fit: cover;
+}
+
 /**********  Header ************/
-.header{
+.header {
     height: 79px;
     margin-bottom: 30px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
 }
-.header img{
-    padding: 30px 50px;
+
+.header img {
+    padding: 30px 50px 30px 0;
     height: 19px;
 }
+
 .header ul {
     display: flex;
-    /* justify-content: space-between; */
-    /* text-align: justify; */
     flex-direction: row;
     gap: 68px;
     height: 79px;
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: -25px;
 }
 
-.header ul li{
+.header ul li {
     display: flex;
     gap: 78px;
     height: 79px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
+    color: var(--black);
 }
-nav li:hover{
+
+nav li:hover {
     border-top: 2px solid var(--filtersLiinfo);
 }
-nav li a:hover{
-    color:var(--filtersLiinfo);
-   
+
+nav li a:hover {
+    color: var(--filtersLiinfo);
+
 }
 
 /********** groupInfo  **********/
@@ -136,8 +145,8 @@ h1 {
 }
 
 form {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 form input {
@@ -178,14 +187,22 @@ form input {
 }
 
 .filters ul {
+    display: flex;
     margin: unset;
 }
 
-.filtersLi {
+.filtersLif {
     display: flex;
-    float: left;
     height: 46px;
     align-items: center;
+    margin-right: 15px;
+    padding-top: unset;
+}
+
+.filtersLi {
+    display: block;
+    float: left;
+    height: 46px;
     margin-right: 15px;
     padding-top: unset;
 }
@@ -202,6 +219,7 @@ form input {
     font-size: 17px;
     color: var(--black);
     align-items: center;
+    white-space: nowrap;
 }
 
 .filtersLi a:hover {
@@ -254,9 +272,8 @@ p.infolineP {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
+    
     box-sizing: border-box;
 }
 
@@ -287,7 +304,7 @@ p.infolineP {
     height: 107px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
+
 }
 
 .hebergements-cards .card-content {
@@ -305,8 +322,11 @@ p.infolineP {
 
 .afficherPlus {
     font-size: 18px;
-    margin-block-end: 30px;
     margin-block-start: 30px;
+}
+h4{
+    margin-block-start: unset;
+    margin-block-end: unset;
 }
 
 /****** Populaires ***********/
@@ -368,12 +388,15 @@ p.infolineP {
     padding-right: unset;
     padding-top: unset;
 }
-.activites-cards .card-content{
+
+.activites-cards .card-content {
     padding: 19px 20px;
 }
-.activites-cards .card-title{
+
+.activites-cards .card-title {
     margin: unset;
 }
+
 .activites-cards img {
     width: 100%;
     height: 380px;
@@ -384,7 +407,7 @@ p.infolineP {
 .activites {
     margin-top: 35px;
     padding: 30px;
-    
+
 }
 
 
@@ -406,6 +429,7 @@ p.infolineP {
 
 .footer-title h4 {
     margin: unset;
+    font-size: 18px;
 }
 
 ul {
@@ -423,17 +447,54 @@ li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    /****************** General    *****************/
+    .card-title {
+        font-size: 0.9em;
+    }
+
+    .card-subtitle {
+        font-size: 0.8em;
+    }
+
+    h4 {
+        font-size: 1.125em;
+    }
+    li{
+        font-size: 0.9em;
+    }
+
+    /****************** GroupInfo  *****************/
+    .filters {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+    /****************** hebergements  ****************/
     .hebergements {
         width: 100%;
     }
 
+    .hebergements-cards {
+        white-space: nowrap;
+    }
+    .afficherPlus{
+        margin-block-start: 30px;
+        margin-block-end: 30px;
+    }
+    
+
+    /****************** Populaires  ****************/
     .populaires {
         width: 100%;
         margin-top: 50px;
+        padding-bottom: 30px;
     }
 
     .populaires-cards {
@@ -445,15 +506,19 @@ li {
     .populaires-cards .card {
         width: 30%;
     }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
+    /******************  Acitives *******************/
+    .activites{
+        margin-top: 35px;
     }
 }
+    /*******************  footer  *******************/
+    .footer-content li{
+        white-space: nowrap;
+        font-size: 1em;
+    }
+    .footer h4{
+        font-size: 1.125em ;
+    }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
