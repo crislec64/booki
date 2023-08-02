@@ -221,9 +221,19 @@ form input {
     display: flex;
     font-weight: 700;
     font-size: 18px;
-    margin-block-end: 35px;
+    
 }
 
+.filtersLi-block {
+    display: flex;
+    margin: unset;
+    margin-block-end: 35px;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+.filtersLi-block ul{
+    display: ;
+}
 .filters ul {
     display: flex;
     margin: unset;
@@ -231,10 +241,10 @@ form input {
 
 .filtersLif {
     display: flex;
-    height: 46px;
     align-items: center;
     margin-right: 15px;
     padding-top: unset;
+    margin-bottom: 20px;
 }
 
 .filtersLi {
@@ -646,13 +656,14 @@ li {
         display: block;
     }
 
-    .filters .ul-filtersLi {
+    .ul-filtersLi {
         display: grid;
         margin: unset;
         grid-template-columns: 1fr 1fr;
     }
 
     .filtersLi {
+        display: block;
         padding-top: 20px;
         font-size: 0.875em;
         height: 50px;
@@ -751,7 +762,5 @@ li {
         padding: 30px;
         gap: 50px;
     }
-
-    .footer-content {}
 
 }
