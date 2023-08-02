@@ -442,6 +442,7 @@ h4 {
     object-fit: cover;
 }
 
+
 .activites {
     margin-top: 35px;
     padding: 30px;
@@ -477,6 +478,7 @@ li {
     padding-top: 15px;
     list-style-type: none;
 }
+
 .W3C {
     display: none;
 }
@@ -559,26 +561,18 @@ li {
     }
 }
 
-/* Small devices (phones, less than 850px) */
-@media (max-width: 850px) {
-
-    /* Traitement image activité */
-    .activites-cards img {
-        object-fit: cover;
-        height: 10em;
-    }
-}
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
     /************ header **************** */
     .main-container {
         padding: unset;
+
     }
 
     main {
-        padding: 30px;
+        padding: 30px 0 30px 0;
+
     }
 
     .header {
@@ -631,7 +625,9 @@ li {
 
     /********** groupInfo  **********/
 
-
+    .group-info {
+        padding: 0 20px 0 20px;
+    }
 
     .searchBar .submit {
         display: none;
@@ -700,8 +696,9 @@ li {
         margin-top: 15px;
     }
 
-    .hebergements-cards .card img {
-        height: 124px;
+    .hebergements-cards img {
+        object-fit: cover;
+        min-height: 124px;
     }
 
     #hebergements {
@@ -712,6 +709,13 @@ li {
     /**************** populaires **************/
     .populaires {
         width: 100%;
+
+    }
+
+    section.populaires {
+        border-radius: unset;
+        padding: 30px 20px;
+
     }
 
     .populaires-cards {
@@ -723,33 +727,31 @@ li {
         margin-top: 15px;
     }
 
-    .populaires-cards .card img {
-        height: 146px;
-    }
-
     .afficherPlus {
         margin-block-start: 15px;
-        margin-block-end: 15px;
     }
 
     /**************** Activités ****************/
     .activites {
-        padding: unset;
+        padding: 30px 30px 0 30px;
     }
 
     .activites-cards {
         grid-template-columns: 1fr;
     }
 
-    .activites-cards .img {
-        height: 241px;
+    #img {
+        object-position: 100% 30%;
     }
 
     /************** footer **********************/
     .footer {
         grid-template-columns: 1fr;
-        width: 100%;
+
+        padding: 30px;
+        gap: 50px;
     }
 
-    
+    .footer-content {}
+
 }
