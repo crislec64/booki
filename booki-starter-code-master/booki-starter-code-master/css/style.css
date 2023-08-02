@@ -10,10 +10,9 @@
     --main-color-location: #1E3150;
     --black: black;
     --white: white;
-    --blueLight: #DEEBFF;
     --borderColor: #D9D9D9;
     --filtersLiI: #0165fc;
-    --filtersLiinfo: #0065fc;
+    
 }
 
 .fa-solid {
@@ -125,12 +124,12 @@ nav li a {
 }
 
 nav li:hover {
-    border-top: 2px solid var(--filtersLiinfo);
+    border-top: 2px solid var(--main-color);
     text-decoration: none;
 }
 
 nav li a:hover {
-    color: var(--filtersLiinfo);
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -172,14 +171,14 @@ h1 {
     height: 50px;
     border-radius: 15px;
     color: var(--white);
-    background-color: var(--filtersLiinfo);
-    border: var(--filtersLiinfo);
+    background-color: var(--main-color);
+    border: var(--main-color);
     box-shadow: 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .searchBar .fa::before {
     display: none;
-    background-color: var(--filtersLiinfo);
+    background-color: var(--main-color);
 }
 
 form {
@@ -218,21 +217,21 @@ form input {
 }
 
 .filters {
-    display: flex;
+    display: grid;
     font-weight: 700;
     font-size: 18px;
     
 }
 
 .filtersLi-block {
-    display: flex;
+    
     margin: unset;
     margin-block-end: 35px;
     flex-wrap: wrap;
     font-weight: 700;
 }
 .filtersLi-block ul{
-    display: ;
+    display: inline-flex;
 }
 .filters ul {
     display: flex;
@@ -270,7 +269,7 @@ form input {
 }
 
 .filtersLi a:hover {
-    background-color: var(--blueLight);
+    background-color: var(--filter-bg-color);
 }
 
 .filtersLi a i {
@@ -297,7 +296,7 @@ form input {
 }
 
 i.fa-solid.fa-info {
-    color: var(--filtersLiinfo);
+    color: var(--main-color);
     margin-right: unset;
     padding: 2px;
     height: 24px;
@@ -630,7 +629,7 @@ li {
 
     nav li:hover {
         border-top: none;
-        border-bottom: 2px solid var(--filtersLiinfo);
+        border-bottom: 2px solid var(--main-color);
     }
 
     /********** groupInfo  **********/
@@ -649,15 +648,17 @@ li {
 
     .searchBar .fa::before {
         display: block;
-
     }
 
     .filters {
         display: block;
     }
 
-    .ul-filtersLi {
+    .filtersLi-block ul {
         display: grid;
+    }
+    .ul-filtersLi {
+        
         margin: unset;
         grid-template-columns: 1fr 1fr;
     }
@@ -758,7 +759,6 @@ li {
     /************** footer **********************/
     .footer {
         grid-template-columns: 1fr;
-
         padding: 30px;
         gap: 50px;
     }
