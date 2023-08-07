@@ -579,6 +579,11 @@ ul {
         height: 12.5em;
         object-fit: cover;
     }
+
+    .footer{
+        column-gap: 30px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -796,7 +801,7 @@ ul {
 
     /************** footer **********************/
     .footer {
-        gap: 50px;
+        gap: 10px;
         grid-template-columns: 1fr;
         padding: 30px;
         
