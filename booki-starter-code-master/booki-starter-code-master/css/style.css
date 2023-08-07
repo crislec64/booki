@@ -747,7 +747,6 @@ ul {
         border-radius: unset;
     }
 
-
     /**********  hebergements ***************/
     #hebergements {
         background-color: unset;
@@ -765,6 +764,9 @@ ul {
     .hebergements-cards img {
         min-height: 124px;
         object-fit: cover;
+    }
+    .hebergements-title{
+        font-size: medium;
     }
 
     /**************** populaires **************/
@@ -785,6 +787,9 @@ ul {
     .populaires-cards .card {
         margin-top: 15px;
     }
+    .populaires-title{
+        font-size: medium;
+    }
 
     /**************** Activités ****************/
     .activites {
@@ -793,6 +798,10 @@ ul {
 
     .activites-cards {
         grid-template-columns: 1fr;
+    }
+
+    .activites-title {
+        font-size: medium;
     }
 
     #img {
