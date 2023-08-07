@@ -579,6 +579,11 @@ ul {
         height: 12.5em;
         object-fit: cover;
     }
+
+    .footer{
+        column-gap: 30px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -742,7 +747,6 @@ ul {
         border-radius: unset;
     }
 
-
     /**********  hebergements ***************/
     #hebergements {
         background-color: unset;
@@ -760,6 +764,9 @@ ul {
     .hebergements-cards img {
         min-height: 124px;
         object-fit: cover;
+    }
+    .hebergements-title{
+        font-size: medium;
     }
 
     /**************** populaires **************/
@@ -780,6 +787,9 @@ ul {
     .populaires-cards .card {
         margin-top: 15px;
     }
+    .populaires-title{
+        font-size: medium;
+    }
 
     /**************** Activités ****************/
     .activites {
@@ -790,13 +800,17 @@ ul {
         grid-template-columns: 1fr;
     }
 
+    .activites-title {
+        font-size: medium;
+    }
+
     #img {
         object-position: 100% 30%;
     }
 
     /************** footer **********************/
     .footer {
-        gap: 50px;
+        gap: 10px;
         grid-template-columns: 1fr;
         padding: 30px;
         
